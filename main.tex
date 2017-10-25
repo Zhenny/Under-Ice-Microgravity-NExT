@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{indentfirst}
+\usepackage{tabulary}
 
 
 
@@ -23,7 +24,7 @@
     \vspace{10cm}
     {\Large\itshape Name 1\par}
     {\Large\itshape David James\par}
-    {\Large\itshape Name 3\par}
+    {\Large\itshape Simon Ng\par}
     {\Large\itshape Name 4\par}
 
 \end{center}
@@ -33,26 +34,114 @@
 \tableofcontents
 \end{titlepage}
 
-\section{Technical}
+\section{Technical Section}
 %Primary Section for the Under Ice Proposal
 \subsection{Abstract}
-Ice is well known for its ability to entrap microbial life and biomolecules, and it provides a record physical history within its stratigraphy. Thus, in the search for life or its components on ice covered ocean worlds such as Europa or Enceladus, it is crucial to be able to take ice core samples with reliability and to preserve the stratigraphy of the samples for later analysis. Our design fulfills the device requirements with 3 sample containers each with their own ice drill, which will extend outside the submerged rover to retrieve the ice samples. We will utilize a hollow drill with a heated tip to allow easier drilling into the ice, and 
 
 \subsection{Test Objectives}
-\subsection{Device Design}
-\subsection{Additional Design Considerations}
-\subsection{Additional Design Considerations}
-\subsection{Compliance with Challenge Requirements}
-\subsection{Manufacturing Plan}
+
+\subsubsection{Device Design}
+This section will include a piece by piece, part by part description of our device with equations, drawings, materials, and measurements
+
+\subsubsection{Additional Design Considerations}
+This section will include any discrepancies between our NBL conditions and design and a real Europa design.
+
+\subsubsection{Requirement Compliance Matrix}
+\begin{center}
+    \begin{tabulary}{\linewidth}{|L|L|}
+    \hline
+    Objectives & Method \\
+    \hline
+    The device shall collect cylindrical samples 0.5" in diameter and 3" deep. &
+    Each sheath will have 0.5" in diameter and 3" deep \\
+    \hline
+    The device shall collect, seal, and store at least 1 sample. &
+    The device store each sample in its own sheath within each drill \\
+    \hline
+    The device shall obtain a subsurface sample from solid and slushy ice. &
+    The device will cut using a thermal coring drill \\
+    \hline
+    The device shall minimize cross contamination between samples. &
+    Each sample will be in it's own cutting device preventing contamination between samples \\
+    \hline
+    The device shall minimize cross contamination by air or water once obtained. &
+    The device will use psi to push the drill out and in the process keeping water out \\
+    \hline
+    The device can be operated electrically by no more than 12V. Power to be supplied by the NBL only. &
+    The device will run on a micro-controller \\
+    \hline
+    The device can have multiple parts that can attach and detach &
+    The device's drill will move on it's own separate from the frame \\
+    \hline
+    The device (all parts, in stowed configuration) shall fit within a 3" diameter x 6" long cylinder. &
+    The device's design will fit within a 3" diameter x 6" long cylinder \\
+    \hline
+    The device (all parts) shall have a dry weight less than 5 lbs. &
+    The device's weight will be 4.5 lbs\\
+    \hline
+    The device (all parts) shall operate underwater with provided electrical power &
+    The device will have several parts that will not allow water in and even in failure will be water resistant \\
+    \hline
+    The device shall be commanded via general purpose input/output lines (3.3V or 5V compatible), or via a Universal Asynchronous Receiver/ Transmitter (UART-3.3V/5V). & 
+    The device will run on a simple DC circuit\\
+    \hline
+    The device shall be compatible with a chlorine water environment and a salt-water environment. & 
+    Te thermal drills will cut ice in both environments.\\
+    \hline
+    The device shall operate within an environment from -5$^\circ$C to 30$^\circ$C. &
+    The components will be insulated to protect from environments. \\
+    \hline
+    \end{tabulary}
+\end{center}
+\subsubsection{Additional Desires Compliance Matrix}
+\begin{center}
+    \begin{tabulary}{\linewidth}{|L|L|}
+    \hline
+    Objectives & Method \\
+    \hline
+    The device shall be able to collect, seal, and store at least 3 samples. &
+    The device will have 3 thermal drills along with 3 sheaths to collect ice samples. \\
+    \hline
+    The device shall maintain the stratigraphy of the sample during collection, containment, and transportation. The sample shall not melt. &
+    The ice will be insulated in sheaths to maintain it's current temperature for as long as the drill process proceeds and then a fridge will continue the cooling after drilling. \\
+    \hline
+    The device shall allow for removal of samples for verification that the stratigraphy is maintained &
+    The sheaths can be open from the side to allow removal of the ice easily. \\
+    \hline
+    \end{tabulary}
+\end{center}
+\subsubsection{Manufacturing Plan}
 \subsection{Test Description}
 \subsection{Technical References}
 
 
-\section{Safety Design}
+\section{Safety Evaluation}
 %Protect the Rover
 \subsection{NBL EVA Requirements}
+\begin{enumerate}
+    \item Pneumatic Power Requirements
+    \begin{enumerate}
+        \item Students projects will be allowed to connect to the NBL's compressed air (shop air) system:
+        \begin{enumerate}
+            \item Pressure - 125 psig (a regulator will be provided to reduce pressure within operating limits of your tool)
+            \item NBL Shop Air Connector details:
+            \begin{enumerate}
+                \item Grainger: Coupler Plug, (M)NPT, Item# 1HLZ8, Mfr. Model# A73440-BG
+                \begin{enumerate}
+                    \item Note: the female P/N is 1HLZ9
+                \end{enumerate}
+                \item Quick Coupler Body, (F) NPT, Steel Item# 1HUK7, Mfr. Model# A73410-BG
+            \end{enumerate}
+            \item NASA will supply the air lines.
+        \end{enumerate}
+        \item All lines, fittings, and pneumatic devices must be rated for a minimum pressure of two and a half (2.5) times the maximum supply pressure.
+    \end{enumerate}
+\end{enumerate}
 \subsection{NBL Prototype Preformance}
+
+
 \section{Outreach Section}
+%Outreach to community and/or students 
 \subsection{Outreach Plan}
 \subsection{Press and Social Media Outlets}
 \subsection{Supplementary Materials}
