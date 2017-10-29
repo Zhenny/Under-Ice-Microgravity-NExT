@@ -20,7 +20,7 @@
 \begin{center}
 
     \vspace{3cm}
-    {\huge\bfseries Under Ice Microgravity NExT\par}
+    {\huge\bfseries Microgravity Electrothermal Liquidation Tunneler (M.E.L.T.) Under Ice Microgravity NExT\par}
     \vspace{10cm}
     {\Large\itshape Name 1\par}
     {\Large\itshape David James\par}
@@ -37,14 +37,38 @@
 \section{Technical Section}
 %Primary Section for the Under Ice Proposal
 \subsection{Abstract}
+Ice is well known for its ability to entrap microbial life and biomolecules1, and it provides a record of physical history within its stratigraphy. Thus, in the search for life or its components on ice covered ocean worlds such as Europa or Enceladus, it is crucial to be able to take ice core samples with reliability and to preserve the stratigraphy of the samples for later analysis. Our device has two parts, one of which will remain in the rover for stability and another which will extend to the undersurface of the ice sheet. Three electrothermal drills will melt their way directly into the ice, being pushed by pneumatic pressure. Once all of the drills have collected their samples, the extended part of the device will return into the rover. The samples could either be analyzed on board the rover or on a larger, homebase rover.
 
-\subsection{Test Objectives}
+\subsection{Design Description}
+Our device is designed to take a subaqueous ice sample from an ice sheet. The device is made up of two cylinders. One cylinder ($C_1$) has a height of 2 inches and a radius of 1.5 inches; $C_1$ will stay within the rover. The second cylinder ($C_2$) has a height of 4 inches and a radius of 1.5 inches. $C_2$ will be extended as a unit outside of the rover into the marine environment until its top side is flush with the ice sheet above. $C_2$ will extend via buoyancy, and will be attached to $C_1$ with wires. In $C_2$, there will be 3 drill wells holding 3 electrothermal, hollow drills, each of which will store its sample within its bore, preventing cross contamination. The drills will push into the ice, melting their way in with a heated nichrome wire in its tip, leaving the center of the ice core frozen. The force pushing each drill into the ice will be provided with pneumatic power via an air hose from $C_1$ to $C_2$ and then to each drill well. Each drill well will be isolated from the air hose by a small metal hatch and from the water above by a large metal hatch across the entire cross section of the drill. Upon an automated signal from a pressure gauge in the air hose, the hatches for one drill well will rotate horizontally open, allowing air into the drill well, increasing the pressure, forcing the drill to melt its way into the ice directly above it. When the drill has melted 3 inches into the ice, a signal will be sent to the heating wire, making a motor coil in the wire, pulling the heating wire through the ice. Then, the pneumatic power will be switched off, allowing the drill to return to its drill well. Once the drill is in the well, its two hatches, above and below, will rotate horizontally closed, preventing contamination from the water outside the device. This process will be repeated one by one with each of the drills. Once all 3 samples have been collected, $C_2$ will be pulled back to $C_1$ by the connecting wires. With 3 ice samples collected and secured, the rover will be ready to move on to its next mission. Once the rover has completed its other missions, the ice samples will be remotely analysed for microbial life and other details of the ocean climate of the planet.
 
 \subsubsection{Device Design}
 This section will include a piece by piece, part by part description of our device with equations, drawings, materials, and measurements
 
+\paragraph{Cylinder 1 ($C_1$)}
+
+$C_1$ is a hollow cylinder made of 3D printed acrylonitrile-butadiene-styrene ESD7 (ABS) with a diameter of 3"  and a height of 2". ABS is impact-resistant, tough, non-permeable, non-toxic, low density, relatively inexpensive, and it has a high melting point of 220 C. ABS ESD7 is particularly suited to the project because it is resistant to electrostatic discharge, providing extra security given the use of electronic components. $C_1$ remains at the bottom of the modular instrument bay at all times to provide a point of grounding for $C_2$. $C_1$ contains the input valves for the pneumatic and electric systems, as well as the majority of the electrical motherboard. Additionally, $C_1$ contains three motors with spooled 30 lb fluorocarbon fishing line, selected for its tensile strength, low elasticity, and water resistance. The line connects $C_1$ to $C_2$. The motors release line to allow $C_2$ to reach the ice surface. They also coil line to bring $C_2$ back into the instrument bay.
+
+\paragraph{Cylinder 2 ($C_2$)}
+$C_2$ is a hollow cylinder made of ABS ESD7 with a radius of 1.5" and a height of 4". $C_2$ exits the modular instrument bay, connected to C1 by the fluorocarbon line. $C_2$ contains an evacuated chamber of volume ----, so when the three motors in $C_1$ release the line, $C_2$ will float up until it is flush with the undersurface of the ice. $C_2$ contains another small electric motherboard as well as the three drill wells, arranged equidistantly in a triangular form.
+\paragraph{Pneumatic System}
+The pneumatic system uses ether polyurethane tubing due to its water and corrosion resistance as well as its ability to retain its flexural properties in cold conditions as low as -65 C. The input connector is a Grainger Coupler Plug, item 1HLZ9, and its outermost part is flush with the outer surface of $C_1$. The tubing is coiled outside $C_1$ in a small cylindrical depression of diameter ----. The tubing uncoils with $C_2$ as it extends from $C_1$. When $C_2$ is fully extended, the tubing crosses the aqueous gap to deliver pressurized air to $C_2$ at pressure psig. Within $C_2$, the $\frac{1}{4}$" tubing divides via a ---- into three tubes, each going to one drill well.
+\paragraph{Drill Well}
+The three drill wells are made of ABS ESD7, printed as part of $C_2$. Each of the drill wells is identical, with an inside diameter of 1.05" and a depth of 3.10". The well has a $\frac{1}{4}$' diameter hole in the bottom which connects to the polyurethane tubing via threading, allowing the pressurized air to enter the drill well, pushing the drill up into the ice.
+\subparagraph{Hatch System}
+The drill well begins in a sealed state, with hatches both above it and below it. The hatch above seals the drill from the aqueous environment, preventing contamination prior to retrieving the sample. The hatch below seals the drill well from the pneumatic tubing, giving control of the pressure in the drill well. The hatches are connected, so they open together, simultaneously allowing pressurized air into the drill well and allowing the drill to push up into the ice above. Once the drill has returned into its well, the hatches close, preventing contamination and stopping the pressurized air from entering the well.
+\paragraph{Drill}
+The three drills are identical. Each drill has two layers with an evacuated gap in between to provide insulation. At the tip of the drill is a heated wire which serves to melt the ice around the desired ice core sample, allowing the drill the push into the ice.
+\subparagraph{Heated Drill Tip}
+The heating wire nestled in the divot in the tip of the drill is $\frac{1}{4}$" diameter nichrome 80/20 wire. The nichrome wire circles completely around the drill tip, and at its ends, the nichrome wire is connected to a copper wire of the same diameter. The copper wires travel down the inside of the evacuated gap to C2, where the copper wires are attached to a spooling motor. When the drill has extended 3" into the ice, the motor begins coiling the copper wires, pulling the hot nichrome wire out of its divot, into the ice, cutting the ice sample cross wise from its mother ice sheet.
+\subparagraph{Drill Body}
+The drill has two walls. The outer wall is stainless steel, and the inner wall is ABS ESD7. Stainless steel is the ideal outer wall material due to its resistance to corrosion in a chlorine aqueous environment and its strength under pressure and heat. It also has a thermal conductivity of 50.2W/(mK), so it will be partially heated by the nichrome wire, ensuring that the drill does not freeze in the ice and that pushing into the ice sheet is smooth. ABS ESD7 is the ideal inner wall material due to its high thermal insulation and, inversely, lower thermal conductivity - 0.1W/(mK). The space between the two walls is evacuated to further insulate the ice sample. ABS ESD7 also does not attract atomized liquids, helping to preserve the ice sample’s stratigraphy. The body is also attached via fluorocarbon fishing line to a motor in C2, allowing the drill to be retracted into its drill well once its sample is collected. There is also a channel running the length of the drill which allows the melted, displaced water to run out into the aqueous environment. Each drill has two integrated hinges and a clasp to allow the drill to open lengthwise to remove the sample, preserving stratigraphy.
 \subsubsection{Additional Design Considerations}
 This section will include any discrepancies between our NBL conditions and design and a real Europa design.
+
+\subsubsection{Other}
+
+$C_2$ will be extended as a unit outside of the rover into the marine environment until its top side is flush with the ice sheet above. $C_2$ will extend via buoyancy, and will be attached to $C_1$ with wires. In $C_2$, there will be 3 drill wells holding 3 electrothermal, hollow drills, each of which will store its sample within its bore, preventing cross contamination. The drills will push into the ice, melting their way in with a heated nichrome wire in its tip, leaving the center of the ice core frozen. The force pushing each drill into the ice will be provided with pneumatic power via an air hose from $C_1$ to $C_2$ and then to each drill well. Each drill well will be isolated from the air hose by a small metal hatch and from the water above by a large metal hatch across the entire cross section of the drill. Upon an automated signal from a pressure gauge in the air hose, the hatches for one drill well will rotate horizontally open, allowing air into the drill well, increasing the pressure, forcing the drill to melt its way into the ice directly above it. When the drill has melted 3 inches into the ice, a signal will be sent to the heating wire, making a motor coil in the wire, pulling the heating wire through the ice. Then, the pneumatic power will be switched off, allowing the drill to return to its drill well. Once the drill is in the well, its two hatches, above and below, will rotate horizontally closed, preventing contamination from the water outside the device. This process will be repeated one by one with each of the drills. Once all 3 samples have been collected, $C_2$ will be pulled back to $C_1$ by the connecting wires. With 3 ice samples collected and secured, the rover will be ready to move on to its next mission. Once the rover has completed its other missions, the ice samples will be remotely analyzed for microbial life and other details of the ocean climate of the planet.
 
 \subsubsection{Requirement Compliance Matrix}
 \begin{center}
@@ -111,13 +135,10 @@ This section will include any discrepancies between our NBL conditions and desig
     \end{tabulary}
 \end{center}
 \subsubsection{Manufacturing Plan}
-\subsection{Test Description}
-\subsection{Technical References}
-
-
-\section{Safety Evaluation}
+\subsection{Operations Plan}
+\subsection{Safety}
 %Protect the Rover
-\subsection{NBL EVA Requirements}
+\subsubsection{NBL EVA Requirements}
 \begin{enumerate}
     \item Pneumatic Power Requirements
     \begin{enumerate}
@@ -126,18 +147,34 @@ This section will include any discrepancies between our NBL conditions and desig
             \item Pressure - 125 psig (a regulator will be provided to reduce pressure within operating limits of your tool)
             \item NBL Shop Air Connector details:
             \begin{enumerate}
-                \item Grainger: Coupler Plug, (M)NPT, Item# 1HLZ8, Mfr. Model# A73440-BG
-                \begin{enumerate}
-                    \item Note: the female P/N is 1HLZ9
-                \end{enumerate}
-                \item Quick Coupler Body, (F) NPT, Steel Item# 1HUK7, Mfr. Model# A73410-BG
+                \item Grainger: Coupler Plug, (M)NPT, Item# 1HLZ8, Mfr. Model A73440-BG
+                \item Quick Coupler Body, (F) NPT, Steel Item# 1HUK7, Mfr. Model A73410-BG
             \end{enumerate}
             \item NASA will supply the air lines.
         \end{enumerate}
         \item All lines, fittings, and pneumatic devices must be rated for a minimum pressure of two and a half (2.5) times the maximum supply pressure.
     \end{enumerate}
+    \item Electrial Power Requirements
+    \begin{enumerate}
+        \item Students projects will be allowed to connect the NBL's electrical outlet: DC 12V, 25 amp. No other electrical power sources will be allowed.
+        \begin{enumerate}
+            \item The interface connection will consist of a positive and negative female banana plug connection.
+        \end{enumerate}
+        \item Tool must incorporate a verifiable barrier to electric shock.
+    \end{enumerate}
+    \item Labels
+    \begin{enumerate}
+        \item The hardware provided shall have labels follows
+        \begin{enumerate}
+            \item Mate/ de-mate alignment marks, operation indicators, as required
+            \item Caution and warning tags for Hazard areas (i.e., pinch points, sharp edges, etc.).
+            \item Hardware identification
+            \item Additional safety labels may be requested by Test Readiness Review
+        \end{enumerate}
+    \end{enumerate}
 \end{enumerate}
-\subsection{NBL Prototype Preformance}
+\subsubsection{NBL Prototype Preformance}
+\subsection{Technical References}
 
 
 \section{Outreach Section}
