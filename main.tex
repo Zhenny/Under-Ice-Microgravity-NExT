@@ -6,6 +6,8 @@
 \usepackage{amsmath}
 \usepackage{indentfirst}
 \usepackage{tabulary}
+\usepackage{hyperref}
+\usepackage{pdfpages}
 
 
 
@@ -81,7 +83,7 @@ Our device is designed to take a subaqueous ice sample from an ice sheet. The de
 
 \paragraph{Cylinder 1 ($C_1$)}
 
-$C_1$ is a hollow cylinder made of 3D printed acrylonitrile-butadiene-styrene ESD7 (ABS) with a diameter of 3" and a height of 1.5". ABS is impact-resistant, tough, non-permeable, non-toxic, low density, relatively inexpensive, and it has a high melting point of 220॰C(**2**). ABS ESD7 is particularly suited to the project because it is resistant to electrostatic discharge, providing extra security given the use of electronic components(**3**). $C_1$ remains at the bottom of the modular instrument bay at all times to provide a point of grounding for $C_2$. $C_1$ contains the input valves for the pneumatic and electric systems, as well as the micro-controller. Additionally, $C_1$ contains three motors with spooled 30 lb fluorocarbon fishing line, selected for its tensile strength, low elasticity, and resistance to water absorption. The line connects $C_1$ to $C_2$. The motors release line to allow $C_2$ to reach the ice surface. They also coil line to bring $C_2$ back into the instrument bay.
+$C_1$ is a hollow cylinder made of 3D printed acrylonitrile-butadiene-styrene ESD7 (ABS) with a diameter of 3" and a height of 1.5". ABS is impact-resistant, tough, non-permeable, non-toxic, low density, relatively inexpensive, and it has a high melting point of 220C(**2**). ABS ESD7 is particularly suited to the project because it is resistant to electrostatic discharge, providing extra security given the use of electronic components(**3**). $C_1$ remains at the bottom of the modular instrument bay at all times to provide a point of grounding for $C_2$. $C_1$ contains the input valves for the pneumatic and electric systems, as well as the micro-controller. Additionally, $C_1$ contains three motors with spooled 30 lb fluorocarbon fishing line, selected for its tensile strength, low elasticity, and resistance to water absorption. The line connects $C_1$ to $C_2$. The motors release line to allow $C_2$ to reach the ice surface. They also coil line to bring $C_2$ back into the instrument bay.
 
 \paragraph{Cylinder 2 ($C_2$)}
 $C_2$ is a hollow cylinder made of ABS ESD7 with a diameter of 3" and a height of 4.5". $C_2$ exits the modular instrument bay, connected to $C_1$ by the fluorocarbon line. $C_2$ contains an evacuated chamber, so when the three motors in $C_2$ release the line, $C_2$ will float up until it is flush with the under-surface of the ice. $C_2$ contains another small electric motherboard as well as the three drill wells, arranged in a triangular form.
@@ -111,6 +113,7 @@ The drill well begins in a sealed state, with hatches both above it and below it
 \paragraph{Drill}
 The three drills are identical. Each drill has two layers with an evacuated gap in between to provide insulation. At the tip of the drill is a heating wire which serves to melt the ice around the desired ice core sample, allowing the drill the push into the ice.
 
+(DESCRIPTION TO BE ADDED)
 \begin{gather*}
     Q = \frac{V^2}{R}*t \\
     Q = m*c*\delta T \\
@@ -131,19 +134,6 @@ The three drills are identical. Each drill has two layers with an evacuated gap 
 The heating element is $\frac{1}{16}$" diameter nichrome 80/20 wire. The nichrome wire circles completely around the drill tip in a divot, and at its ends, the nichrome wire is connected to a copper wire of the same diameter. The copper wires travel down the melt channel to $C_2$, where the copper wires are attached to a spooling motor. When the drill has extended 3" into the ice, the motor begins coiling the copper wires, pulling the hot nichrome wire out of its divot, into the ice, cutting the ice sample cross wise from its mother ice sheet.
 \subparagraph{Drill Body}
 Each drill measures 0.817" in diameter and 3.5" in height with two walls. The 0.018" thick outer wall is stainless steel, and the 0.0689" inner wall is ABS ESD7. Stainless steel is the ideal outer wall material due to its resistance to corrosion in a chlorine aqueous environment and its strength under pressure and heat. It also has a thermal conductivity of 50.2W/(mK), so it will be partially heated by the nichrome wire, ensuring that the drill does not freeze in the ice and that pushing into the ice sheet is smooth. ABS ESD7 is the ideal inner wall material due to its high thermal insulation and, inversely, lower thermal conductivity, which is 0.1W/(mK). The space between the two walls is evacuated to further insulate the ice sample. ABS ESD7 also does not attract atomized liquids, helping to preserve the ice sample’s stratigraphy. The body is also attached via fluorocarbon fishing line to a motor in $C_2$, allowing the drill to be retracted into its drill well once its sample is collected. There is also a channel running the length of the drill which allows the melted, displaced water to run out into the aqueous environment. Each drill has two integrated hinges and a clasp to allow the drill to open lengthwise to remove the sample, preserving stratigraphy.
-
-\subsubsection{Design Considerations}
-This section will include any discrepancies between our NBL conditions and design and a real Europa design.
-
-\subsubsection{Test Description}
-The objective of this test is to collect subsurface ice samples and to seal and store them without contamination. The sample should be a ice cylinder 0.5" in diameter and 3" deep. Our expectation is to collect 3 samples one after another for efficiency. 
-
-The test will begin with the operator being submerged under water carrying the rover that is containing the device in the modular instrument bay. The rover would be placed under the ice surface and would hold on against the subsurface. Then the operator would give the command to open the gate of the bay and release air pressure into the outer-shell of our device ($C_1$).  This would push the inner shell of the device ($C_2$), which carries the three drills, out of the bay. The buoyancy of $C_2$ would enable it to continue floating until it is pushed against the subsurface of the ice. Once $C_2$ is holding against the ice, the operator can give the command to start increasing the air pressure inside the drill well. Once the pressure reach our desired level, the pressure sensor would enable the hatches both over and under the drill to open. The drill would be pushed out of the drill well and into the ice. After the drill is pushed into the ice completely, the command of stopping air inflow will be sent and the heating wire will enclose, stretching out elastic fiber. The heated wire will cut the ice loose and seal it. The  motor inside $C_2$ will then start pulling drill back into the drill well. Once the drill is fully inside, the hatches would be closed again. Then the second and third drill will go through the same process illustrated above. 
-
-After the third dill is pulled back into the drill well, the hatches closed, the command will be given to start the motor that pulls $C_2$ back into $C_1$. Once $C_2$ is fully inside of $C_1$. The operator can close the hatch of the modular instrument bay. Then the rover can be retrieve back onto land. 
-
-For the samples to be extracted from the drills. The operator can extract the drills and open them horizontally. Ideally, the sample would be a cylinder that is slightly bigger than 0.5" diameter and 3" deep, which would account for accidental loss of the sample. Additionally, it would be free from contamination since it is well sealed ever since it is cut from the ice sheet.
-
 
 \subsubsection{Requirement Compliance Matrix}
 \begin{center}
@@ -210,7 +200,17 @@ For the samples to be extracted from the drills. The operator can extract the dr
     \end{tabulary}
 \end{center}
 \subsubsection{Manufacturing Plan}
+
+All team members will take the general laboratory safety course to use the student machine shop. All manufacturing will take place at UCLA, so we do not expect any outside machine shop costs.
+
 \subsection{Operations Plan}
+
+The test will begin with the device being submerged and placed on the buoyant platform beneath the ice sheet. Once everything is set, three motors in C1 will unspool fishing line connecting to C2, and C2 will float away from C1 to the undersurface of the ice. 
+
+Once C2 is at the ice, the air pressure will be turned on between 15 and 18 psig. With increasing pressure, pressure gauges within the device will open one drill well hatch system, and the drill will be pushed out of the well by the pressure. At the same time, electricity will be fed to the nichrome heating wire in the tip of the drill, melting the ice as the drill is pushed into it. Once the drill has fully extended, retrieving a 3″ sample, the heated wire will be pulled by a spooling motor within C2, pulling the heated wire through the ice cross section. Then, a motor will spool fishing line attached to the bottom of the drill, pulling it back into the drill well. Once the drill is fully in the drill well, the hatches will close, closing out water and pressurized air. The same process will be repeated with the other two drills to obtain a total of 3 samples. At this point the pressurized air can be turned off.
+
+As soon as the three samples are within C2, the three motors in C1 will spool up the fishing line, pulling C2 back to C1. At this point, the electricity can be turned off. The device can be retrieved from the water. Upon land, the drills can be removed from the wells and opened to investigate whether stratigraphy was preserved. The test is then finished.
+
 \subsection{Safety}
 %Protect the Rover
 \subsubsection{NBL EVA Requirements}
@@ -252,9 +252,40 @@ For the samples to be extracted from the drills. The operator can extract the dr
 This section should describe any safety features and considerations. Include any unique hazards your device creates. Explain how you will mitigate those hazards, including testing and analysis that would be performed to prove it is safe to utilize in the NBL.\par
 This device’s design does not require EVA, and thus potential danger to humans is extremely low. However, safety is still paramount. On a rover mission, it is critical that this device does not cause any compromise to the data being collected by other instruments. \par
 To ensure device safety, both C1 and C2 are made from ABS ESD7, sealed at seams with 3M™ Marine Adhesive Sealant 5200. ABS is impact-resistant, tough, and resistant to electrostatic discharge, ensuring that any stray electric charges within the device will not be transferred to the surrounding water or the rover. Additionally, all internal wiring will be insulated to prevent electric shock in case water does somehow breach either of the cylinders. The copper and nichrome heating wires in the drills are also insulated, preventing electric shock in the water. The female banana plugs will connect with the main circuit board through two walls of ABS ESD7. First, the banana plug wires pass through holes in the outer wall of C1, and then the wires pass through a smaller ABS ESD7 box within C1, providing secondary protection of electrical components. The input wires will be insulated, and the holes they go through will be as small as possible. Once the wires are hooked up through the two walls, any remaining gap between the wire and the wall will be filled with RTV 108 Silicone Rubber Adhesive Sealant, selected for its electrical insulating properties12. A layer of 3M™ Marine Adhesive Sealant 5200 Fast Cure will be applied over that for its waterproofing quality to ensure that there is no path for water to enter into the electrical circuitry.\par
-This method will be tested prior to testing in the NBL to verify that it is in fact a barrier to electric shock. In an aquarium, we will make an aqueous solution with 3.5 ppm free chlorine, the maximum level in the NBL. We will submerge our device in the solution and run electricity through the wires to ensure that no water gets in and that there are no unforeseen issues. We will run the procedure at a variety of temperatures from 0॰C to 30॰C to ensure safety at all possible water temperatures in the NBL. We will repeat the procedure with a sodium chloride solution to ensure there are no issues with a saltwater environment. If we discover any leaks or other problems, we will redesign our barrier, and then will test it again.\par
+This method will be tested prior to testing in the NBL to verify that it is in fact a barrier to electric shock. In an aquarium, we will make an aqueous solution with 3.5 ppm free chlorine, the maximum level in the NBL. We will submerge our device in the solution and run electricity through the wires to ensure that no water gets in and that there are no unforeseen issues. We will run the procedure at a variety of temperatures from 0C to 30C to ensure safety at all possible water temperatures in the NBL. We will repeat the procedure with a sodium chloride solution to ensure there are no issues with a saltwater environment. If we discover any leaks or other problems, we will redesign our barrier, and then will test it again.\par
 The pneumatic system is in compliance with NBL requirements that all pneumatic elements must be rated for at least 2.5 times our maximum supply pressure, which will be no higher than 120 psi. Therefore, our elements must be rated for at least 300 psi. The ether polyurethane tubing has a maximum rating of 7500 psi10. The ABS ESD7, used in the drill well, has a tensile strength of 5200 psi11. The pneumatic coupler plug (1HLZ9) and coupler body (1HUK7) are both rated to 300 psi. 3M™ Marine Adhesive Sealant 5200 has a tensile strength of 700 psi13 and RTV 108 Silicone Rubber Adhesive Sealant has a tensile strength of 400 psi12.\par
 The entry point of the banana plugs and the pneumatic system will be labeled, as will each other components on the outside of the device. Any sharp or pinch points will also be labeled. All materials used are in compliance with the NBL materials requirements.
+\begin{center}
+    \begin{tabulary}{\linewidth}{|L|L|L|L|}
+    \hline
+    Material/ Object/ Service & Cost & Manufacturing \\
+    \hline
+    Nichrome heating wire ($\frac{1}{16}$") & \$ 22.25 & Purchased \\
+    \hline
+    Stainless Steel (0.018" thick)          & \$ 19.36  Worked in UCLA machine & shop \\
+    \hline
+    Steel Industrial Quick Coupler Plug (0.005 lbs)     & \$ 1.65 & Purchased \\
+    \hline
+    ABS ESD7 Filament & \$90 & 3D printed in UCLA machine shop \\
+    \hline
+    30 Lb Fluorocarbon Fishing line & \$13 & Purchased \\
+    \hline
+    ether polyurethane (5ft.) & \$2.60 & Purchased \\
+    \hline
+    Master Bond Supreme 3HT-80 (adhesive for steel-abs) & We would have to contact them & Purchased \\
+    \hline
+    3M™ Marine Adhesive Sealant 5200 Fast Cure & \$9.99 & Purchased \\
+    \hline
+    Copper Wire & \$8.72 &  \\
+    \hline
+    RTV 108 Silicone Rubber Adhesive Sealant & \$9.33 & Purchased \\
+    \hline
+    12 Servo motors & \$42 & Purchased \\
+    \hline
+    Miscellaneous Electronics & \$25 & Purchased \\
+    \hline
+    \end{tabulary}
+\end{center}
 
 \subsubsection{Other}
 
@@ -266,18 +297,99 @@ $C_2$ will be extended as a unit outside of the rover into the marine environmen
 \section{Outreach Section}
 %Outreach to community and/or students 
 \subsection{Outreach Plan}
+\paragraph{General Plan}
+We have always been curious to understand our world, life, and the complexity of our universe. This is why we value space exploration and related experiments, because we want answers to our boundless curiosity. We believe that everyone should be familiarized with what have been done for space missions as well as the challenges we face today. We want to inspire future generations to tackle the next set of space challenges through space related activities and through social media campaigns.
+
+
+\paragraph{ACTIVITY 1 : Exploring Your Universe (EYU) (planned)}
+\subparagraph{Plan:}
+Every year, thanks to the participation of student groups, departments and faculty across all science disciplines, UCLA organizes a large science outreach with over 7,000 guests and participants. There are a wide variety of presentations ranging from hands-on activities to demonstrations. All presentations emphasize science related discussions.\par
+We will be volunteering at the Bruin Spacecraft Group booth on November 5 2017 in the UCLA Court of Science. (authorization linked) \par
+Since many families are coming for this event, our target audience are elementary and middle school children, with the intention of creating an interest in our project while entertaining them. Hopefully, our activity and the subsequent discussions will be highly stimulating and engaging for both students and adults.\par
+\subparagraph{Activity Presentation:}
+During the event, we will introduce our audience to the principle of ice-sampling with examples from Antartica and the many challenges faced, such as the ice melting, contamination by air or water, and storage of the samples. We will summarize these points in a flyer that we will give at this occasion.\par
+The interactive part with elementary aged students will consist of an ice cream sampling challenge. We will give the children some safe tools so they can create their own “sampling scoop” that they will test on ice cream we will have for the occasion. Their goal will be to take an ice cream sample that they can then ‘analyse’ with their taste buds. We will ask them to describe the taste, texture, etc, and prompt them to explain why they think it is that way. We will discuss with them about whether their designs would still work if we were in a micro-gravity environment, stimulating their critical thinking skills. We will then ask them to draw another device which could sample ice cream from a distance better. This will appeal to their admiration of astronauts and space missions, while being a fun entertaining experience where they can get ice cream by doing engineering.\par
+\subparagraph{Materials:}
+Plastic tea spoons, strings, tape, clothespins, vanilla ice cream (dairy)
+\subparagraph{Safety:}
+We will continuously watch the children while they design and build their device and will inform the parents that the ice cream contains dairy. We will make sure to store the ice cream in a freezing bag before the experiment so that it will not melt.
+
+\paragraph{ACTIVITY 2 : Astronomy Day (Potential)}
+\subparagraph{Plan:}
+In order to reach out to high school and college students outside of UCLA, we will participate to the College of the Canyons’s Astronomy Day where high schoolers and college students exchange and discuss space related facts and gather around hands-on activities. It will be at the end of Winter quarter in Santa Clarita.
+\subparagraph{Activity Presentation:}
+We will have flyers and posters about the projects in Antarctica and we will discuss the conditions of planets such as Europa so that we understand together what makes the ice-sampling there more challenging. It will lead to a discussion about microgravity environment in general and will stimulate student’s excitement about space exploration. We will also show them our video (from the social media campaign).
+
 \subsection{Press and Social Media Outlets}
+\paragraph{Plan}
+In addition to sharing photos of our project after the end of the contest on the BruinSpace website and in the UCLA Facebook group with parental agreement for the kids of the EYU ice cream activity, we plan to reach the the broader public by creating a video that will present our challenge and our step by step reasoning behind our design and our problem solving process to resolve design issues.\par
+In the format of a podcast, we would first present the challenge and its context and then present our process by going through our drafts and finally showing the final design of the ice-sampling device with a simulation of the test, using Autodesk Fusion 360.\par
+Additionally, we will talk to the Daily Bruin, the popular journal of UCLA so that they also introduce our project while promoting the Bruin Spacecraft organization so that students join the club for next year’s Micro-g NExT challenges.
 \subsection{Supplementary Materials}
 
 
 \section{Administrative Section}
 %Faculty Section
 \subsection{Test Week Preference}
+We would appreciate test Week 1: May 21-26, 2018. 
+\subsection{Mentor Request}
+We do not have any requests.
+
 \subsection{Statement of Supervising Faculty}
+Letter attached
 \subsection{Institutional Letter of Endorsement}
+\noindent
+Letter of Endorsement attached \\
+Statement of Supervising Faculty attached \\
+
 \subsection{Statement of Rights of Use}
+\noindent
+As a team member for a proposal entitled “M.E.L.T.” proposed by a team of undergraduate students from University of California Los Angeles, I will and hereby do grant the U.S. Government a royalty-free, nonexclusive and irrevocable license to use, reproduce, distribute (including distribution by transmission) to the public, perform publicly, prepare derivative works, and display publicly, any data contained in this proposal in whole or in part and in any manner for Federal purposes and to have or permit others to do so for Federal purposes only. \\
+\\
+As a team member for a proposal entitled “M.E.L.T.” proposed by a team of undergraduate students from University of California Los Angeles, I will and hereby do grant the U.S. Government a nonexclusive, nontransferable, irrevocable, paid-up license to practice or have practiced for or on behalf of the United States an invention described or made part of this proposal throughout the world. \\
+\break
+\noindent
+Team Member 1: \hrulefill \\
+\break
+Team Member 2: \hrulefill \\
+\break
+Team Member 3: \hrulefill \\
+\break
+Team Member 4: \hrulefill \\
+
 \subsection{Funding and Budget Statement}
+\noindent
+Potential source of funding (continent with proposal approval) : Bruin Spacecraft Group Grant
+\begin{center}
+    \begin{tabulary}{\linewidth}{|L|L|}
+    \hline
+    Items       &   Cost    \\
+    \hline
+    Materials   &   \$225.9 \\
+    \hline
+    Manufacturing   &   \$0 \\
+    \hline
+    Travels (4 individuals/ 4 days)     & \$3180    \\
+    \hline
+    Fights      &   \$1000  \\
+    \hline
+    Hotels (3 nights/ 2 rooms)  &   \$1200  \\
+    \hline
+    Food        &   \$480   \\
+    \hline
+    Car Rental  &   \$500   \\
+    \hline
+    Factor of safety(10\%)  &   \$340.59    \\
+    \hline
+    Total       &   \$3746.49   \\
+    \hline
+    \end{tabulary}
+\end{center}
 \subsection{Financial Representative}
+\noindent
+Jessica Lozano, Fund Manager, Mechanical and Aerospace Engineering, UCLA; \\
+jessical@seas.ucla.edu
+
 
 \section{Appendix}
 \begin{thebibliography}{12}
@@ -318,5 +430,9 @@ Stratasys, Fred Fischer. \textit{Thermoplastics : The Strongest Choice for 3D Pr
 UNH. “About Ice Cores.”\textit{About Ice Cores: Drilling Ice Cores}, Web.
 
 \end{thebibliography}
+
+\includepdf{doc1.pdf}
+\includepdf{doc2.pdf}
+\includepdf{doc3.pdf}
 
 \end{document}
