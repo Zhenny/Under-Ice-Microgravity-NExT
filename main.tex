@@ -20,12 +20,37 @@
 \begin{center}
 
     \vspace{3cm}
-    {\huge\bfseries Microgravity Electrothermal Liquidation Tunneler (M.E.L.T.) Under Ice Microgravity NExT\par}
-    \vspace{10cm}
-    {\Large\itshape Name 1\par}
-    {\Large\itshape David James\par}
-    {\Large\itshape Simon Ng\par}
-    {\Large\itshape Name 4\par}
+    {\huge\bfseries Microgravity Electrothermal Liquidation Tunneler (M.E.L.T.) 
+    Under Ice Microgravity NExT\par}
+    
+    \vspace{3cm}
+    {\huge The Ice Fishers at UCLA\par}
+    {\huge University of California, Los Angeles\par} 
+    {\huge 405 Hilgard Avenue\par}
+    {\huge Los Angles, CA 90095\par}
+    
+    \vspace{2cm}
+    {\Large Team Contact\par}
+    \vspace{.5cm}
+    {\large Simon Ng\par}
+    {\large ngsimon227@gmail.com\par}
+    {\large (414)882-9172\par}
+    
+    
+    \vspace{1cm}
+    {\Large Team Members\par}
+    \vspace{.5cm}
+    {\large\itshape David James - Technical/ Safety\par}
+    {\large davidabraham@ucla.edu - 4th Year Computational Mathematics\par}
+    \vspace{.25cm}
+    {\large\itshape Jenny Wu - Technical/ Safety\par}
+    {\large jenny.wu.dalian@outlook.com - 2nd Year Computer Science\par}
+    \vspace{.25cm}
+    {\large\itshape Simon Ng - Technical/ Safety\par}
+    {\large ngsimon227@gmail.com - 1st Year Bioengineering\par}
+    \vspace{.25cm}
+    {\large\itshape Lou Baya Ould Rouis - Outreach Manager\par}
+    {\large loubaya.or@gmail.com - 1st Year Physics\par}
 
 \end{center}
 \end{titlepage}
@@ -43,7 +68,6 @@ Ice is well known for its ability to entrap microbial life and biomolecules$^1$,
 Our device is designed to take a subaqueous ice sample from an ice sheet. The device is made up of two cylinders. One cylinder ($C_1$) has a height of 2 inches and a radius of 1.5 inches; $C_1$ will stay within the rover. The second cylinder ($C_2$) has a height of 4 inches and a radius of 1.5 inches. $C_2$ will be extended as a unit outside of the rover into the marine environment until its top side is flush with the ice sheet above. $C_2$ will extend via buoyancy, and will be attached to $C_1$ with wires. In $C_2$, there will be 3 drill wells holding 3 electrothermal, hollow drills, each of which will store its sample within its bore, preventing cross contamination. The drills will push into the ice, melting their way in with a heated nichrome wire in its tip, leaving the center of the ice core frozen. The force pushing each drill into the ice will be provided with pneumatic power via an air hose from $C_1$ to $C_2$ and then to each drill well. Each drill well will be isolated from the air hose by a small metal hatch and from the water above by a large metal hatch across the entire cross section of the drill. Upon an automated signal from a pressure gauge in the air hose, the hatches for one drill well will rotate horizontally open, allowing air into the drill well, increasing the pressure, forcing the drill to melt its way into the ice directly above it. When the drill has melted 3 inches into the ice, a signal will be sent to the heating wire, making a motor coil in the wire, pulling the heating wire through the ice. Then, the pneumatic power will be switched off, allowing the drill to return to its drill well. Once the drill is in the well, its two hatches, above and below, will rotate horizontally closed, preventing contamination from the water outside the device. This process will be repeated one by one with each of the drills. Once all 3 samples have been collected, $C_2$ will be pulled back to $C_1$ by the connecting wires. With 3 ice samples collected and secured, the rover will be ready to move on to its next mission. Once the rover has completed its other missions, the ice samples will be remotely analysed for microbial life and other details of the ocean climate of the planet.
 
 \subsubsection{Device Design}
-This section will include a piece by piece, part by part description of our device with equations, drawings, materials, and measurements
 
 \paragraph{Cylinder 1 ($C_1$)}
 
@@ -83,23 +107,20 @@ The three drills are identical. Each drill has two layers with an evacuated gap 
 
 \begin{align*}
     m &= \rho * s*d \\
-    \frac{V^2}{R}*t &= (m*c*\delta T \\
-    &= (\rho * s*d) c * \delta T \\
-    d &= \frac{V^2 * t}{\rho *s*c*\delta T*R} \\
-    \frac{d}{dt}(d) &= \frac{d}{dt}(t)* \frac{V^2}{\rho *s*c*\delta T*R} \\
-    v &= \frac{V^2}{\rho *s*c*\delta T*R}
+    \frac{V^2}{R}*t &= (m*c*\Delta T \\
+    &= (\rho * s*d) c * \Delta T \\
+    d &= \frac{V^2 * t}{\rho *s*c*\Delta T*R} \\
+    \frac{d}{dt}(d) &= \frac{d}{dt}(t)* \frac{V^2}{\rho *s*c*\Delta T*R} \\
+    v &= \frac{V^2}{\rho *s*c*\Delta T*R}
 \end{align*}
 
 \subparagraph{Heated Drill Tip}
 The heating wire nestled in the divot in the tip of the drill is $\frac{1}{4}$" diameter nichrome 80/20 wire. The nichrome wire circles completely around the drill tip, and at its ends, the nichrome wire is connected to a copper wire of the same diameter. The copper wires travel down the inside of the evacuated gap to C2, where the copper wires are attached to a spooling motor. When the drill has extended 3" into the ice, the motor begins coiling the copper wires, pulling the hot nichrome wire out of its divot, into the ice, cutting the ice sample cross wise from its mother ice sheet.
 \subparagraph{Drill Body}
 The drill has two walls. The outer wall is stainless steel, and the inner wall is ABS ESD7. Stainless steel is the ideal outer wall material due to its resistance to corrosion in a chlorine aqueous environment and its strength under pressure and heat. It also has a thermal conductivity of 50.2W/(mK), so it will be partially heated by the nichrome wire, ensuring that the drill does not freeze in the ice and that pushing into the ice sheet is smooth. ABS ESD7 is the ideal inner wall material due to its high thermal insulation and, inversely, lower thermal conductivity - 0.1W/(mK). The space between the two walls is evacuated to further insulate the ice sample. ABS ESD7 also does not attract atomized liquids, helping to preserve the ice sample’s stratigraphy. The body is also attached via fluorocarbon fishing line to a motor in C2, allowing the drill to be retracted into its drill well once its sample is collected. There is also a channel running the length of the drill which allows the melted, displaced water to run out into the aqueous environment. Each drill has two integrated hinges and a clasp to allow the drill to open lengthwise to remove the sample, preserving stratigraphy.
+
 \subsubsection{Additional Design Considerations}
 This section will include any discrepancies between our NBL conditions and design and a real Europa design.
-
-\subsubsection{Other}
-
-$C_2$ will be extended as a unit outside of the rover into the marine environment until its top side is flush with the ice sheet above. $C_2$ will extend via buoyancy, and will be attached to $C_1$ with wires. In $C_2$, there will be 3 drill wells holding 3 electrothermal, hollow drills, each of which will store its sample within its bore, preventing cross contamination. The drills will push into the ice, melting their way in with a heated nichrome wire in its tip, leaving the center of the ice core frozen. The force pushing each drill into the ice will be provided with pneumatic power via an air hose from $C_1$ to $C_2$ and then to each drill well. Each drill well will be isolated from the air hose by a small metal hatch and from the water above by a large metal hatch across the entire cross section of the drill. Upon an automated signal from a pressure gauge in the air hose, the hatches for one drill well will rotate horizontally open, allowing air into the drill well, increasing the pressure, forcing the drill to melt its way into the ice directly above it. When the drill has melted 3 inches into the ice, a signal will be sent to the heating wire, making a motor coil in the wire, pulling the heating wire through the ice. Then, the pneumatic power will be switched off, allowing the drill to return to its drill well. Once the drill is in the well, its two hatches, above and below, will rotate horizontally closed, preventing contamination from the water outside the device. This process will be repeated one by one with each of the drills. Once all 3 samples have been collected, $C_2$ will be pulled back to $C_1$ by the connecting wires. With 3 ice samples collected and secured, the rover will be ready to move on to its next mission. Once the rover has completed its other missions, the ice samples will be remotely analyzed for microbial life and other details of the ocean climate of the planet.
 
 \subsubsection{Requirement Compliance Matrix}
 \begin{center}
@@ -107,44 +128,44 @@ $C_2$ will be extended as a unit outside of the rover into the marine environmen
     \hline
     Objectives & Method \\
     \hline
-    The device shall collect cylindrical samples 0.5" in diameter and 3" deep. &
-    Each sheath will have 0.5" in diameter and 3" deep \\
+    The device shall collect cylindrical samples 0.5" diameter and 3" deep. &
+    The inner sheath of each drill that stores the ice is be 0.5" in diameter and 3" deep. \\
     \hline
     The device shall collect, seal, and store at least 1 sample. &
-    The device store each sample in its own sheath within each drill \\
+    The device stores each sample in its own sheath within each drill. A hatch seals each drill whenever it is not in the ice sheet. \\
     \hline
     The device shall obtain a subsurface sample from solid and slushy ice. &
-    The device will cut using a thermal coring drill \\
+    The device melts a path through the ice, solid or slushy, with a heated nichrome 80/20 wire. Once the drill has obtained a 3" sample, the nichrome wire is pulled across the cross section of the sample, separating it from the ice sheet. \\
     \hline
     The device shall minimize cross contamination between samples. &
-    Each sample will be in it's own cutting device preventing contamination between samples \\
+    Each sample is in its own isolated drill, preventing contamination between samples. \\
     \hline
     The device shall minimize cross contamination by air or water once obtained. &
-    The device will use psi to push the drill out and in the process keeping water out \\
+    The drill containing each sample is covered by a hatch both above and below as soon as it is fully within its drill well, keeping both water and air from contaminating the sample. \\
     \hline
     The device can be operated electrically by no more than 12V. Power to be supplied by the NBL only. &
-    The device will run on a micro-controller \\
+    The device runs on a micro-controller, and power consumption for the heated wire and the motors is below 10V. \\
     \hline
     The device can have multiple parts that can attach and detach &
-    The device's drill will move on it's own separate from the frame \\
+    The device consists of two cylinders. One remains in the rover, and the other extends up to the ice sheet to retrieve 3 samples. \\
     \hline
     The device (all parts, in stowed configuration) shall fit within a 3" diameter x 6" long cylinder. &
-    The device's design will fit within a 3" diameter x 6" long cylinder \\
+    The 2 cylinders and 3 drills, when in stowed configuration, makes a cylinder with a 3" diameter and a 6" height. \\
     \hline
     The device (all parts) shall have a dry weight less than 5 lbs. &
-    The device's weight will be 4.5 lbs\\
+    The device's weight will be 4.5 lbs due to the use of light ABS plastic. \\
     \hline
     The device (all parts) shall operate underwater with provided electrical power &
-    The device will have several parts that will not allow water in and even in failure will be water resistant \\
+    The device's shell will be made from 3D printed ABS, a non-permeable plastic, and all seams will be sealed with marine adhesive. The device will be compatible with female banana plug connections. \\
     \hline
     The device shall be commanded via general purpose input/output lines (3.3V or 5V compatible), or via a Universal Asynchronous Receiver/ Transmitter (UART-3.3V/5V). & 
-    The device will run on a simple DC circuit\\
+    The device runs on a simple DC circuit. \\
     \hline
     The device shall be compatible with a chlorine water environment and a salt-water environment. & 
-    Te thermal drills will cut ice in both environments.\\
+    The outside of the device is made from ABS and stainless steel, both resistant to chlorine and salt water environments.\\
     \hline
     The device shall operate within an environment from -5$^\circ$C to 30$^\circ$C. &
-    The components will be insulated to protect from environments. \\
+    All components are safely operable within a range between -40$^\circ$C to 70$^\circ$C, and the outer cylinders are made from ABS, which has a high thermal insulation (0.1W/(mK). \\
     \hline
     \end{tabulary}
 \end{center}
@@ -155,13 +176,13 @@ $C_2$ will be extended as a unit outside of the rover into the marine environmen
     Objectives & Method \\
     \hline
     The device shall be able to collect, seal, and store at least 3 samples. &
-    The device will have 3 thermal drills along with 3 sheaths to collect ice samples. \\
+    The device has 3 thermal drills, and each drill stores its own ice sample. \\
     \hline
     The device shall maintain the stratigraphy of the sample during collection, containment, and transportation. The sample shall not melt. &
-    The ice will be insulated in sheaths to maintain it's current temperature for as long as the drill process proceeds and then a fridge will continue the cooling after drilling. \\
+    The drill melts the ice around the sample, leaving the desired sample as solid ice. The drill has 2 walls, with stainless steel on the outside and ABS on the inside for thermal insulation. Additionally, the gap between the walls is evacuated, providing further insulation and maintaining the sample's solid stratigraphy through containment and transportation. \\
     \hline
     The device shall allow for removal of samples for verification that the stratigraphy is maintained &
-    The sheaths can be open from the side to allow removal of the ice easily. \\
+    The drill opens from the side to allow removal of the sample without risk of compromising stratigraphy. \\
     \hline
     \end{tabulary}
 \end{center}
@@ -223,6 +244,47 @@ $C_2$ will be extended as a unit outside of the rover into the marine environmen
 \subsection{Statement of Rights of Use}
 \subsection{Funding and Budget Statement}
 \subsection{Financial Representative}
+
+\section{Appendix}
+
+\begin{thebibliography}{12}
+\bibitem{Ann}
+Ann Phy New Age Industries Southhampton, Pa. | May 05, 2009. "Pneumatic Tubing - It's Mostly About the Material." \textit{Hydraulics and Pneumatics}, 16 Mar. 2016
+
+\bibitem{Aquino}
+Aquino, Francisco E, Ronaldo T. Bernardo, Michael Handley, Paul A. Mayewski, Franciele Schwanck, and Jefferson C. Simones. "Drilling, Processing and First Results for Mount Johns Ice Core in West Antarctica Ice Sheet." \textit{Brazilian Journal of Geology}. 46.1 (2016): 29-40. Print.
+
+\bibitem{Eicken}
+Eicken, Hajo. \textit{Field Techniques for Sea Ice Research}. Fairbanks: University of Alaska Press, 2009. Internet resource.
+
+\bibitem{Hamod}
+Hamod, Haruna. \textit{Suitability of recycled HDPE for 3D printing filament}. Arcada University of Applied Science, 2014. Web. 29 October 2016.
+
+\bibitem{Knight}
+Knight, Randall D. \textit{Physics for Scientists and Engineers: A Strategic Approach with Modern Physics}. Boston, MA: Addison-Wesley.
+
+\bibitem{Knowlton}
+Knowlton, Caitlin et al. “Microbial Analyses of Ancient Ice Core Sections from Greenland and Antarctica.” \textit{Biology} 2.1 (2013): 206–232. PMC. Web. 29 Oct. 2017.
+
+\bibitem{Momentive}
+Momentive, RVT 100 Series: \textit{Technical Data Sheet}, HCD-10289, July 11 2012. PDF.
+
+\bibitem{Outgassing}
+\textit{Outgassing Data for Selecting Spacecraft Materials} . National Aeronautics and Space Administration, 13 Jan. 2016. https://outgassing.nasa.gov/. Accessed 01 Nov. 2016.
+
+\bibitem{Poly}
+\textit{Polyurethane Tubing (PUR, PU tubing) - Superthane® from NewAge® Industries}
+
+\bibitem{Stratasys}
+Stratasys, ABS-ESD7: \textit{Production-Grade Thermoplastic for Fortus 3D Production Systems}, Stratasys, 2015, PDF.
+
+\bibitem{Stratasys2}
+Stratasys, Fred Fischer. \textit{Thermoplastics : The Strongest Choice for 3D Printing}, Stratasys, 2011.
+
+\bibitem{UNH}
+UNH. “About Ice Cores.”\textit{About Ice Cores: Drilling Ice Cores}, Web.
+
+\end{thebibliography}
 
 
 
